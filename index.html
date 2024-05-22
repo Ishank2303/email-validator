@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email-Validator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="img/email.svg" alt="Email.svg">
+            <span>I-validate</span></div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+            
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div class="container">
+        <h1>Enter Your Email here to Validate</h1>
+        <br>
+       
+            <form action="/submit" method="post">
+
+                <input placeholder="example@domain.com"  autocapitalize="off" spellcheck="false" autocorrect="off"
+                autocomplete="on"
+                required="" type="email" id="username" name="username"  lang="en"
+                maxlength="254" required>
+                
+                <!-- <input 
+                  type="email"
+                  id="username"
+                  name="email"
+                  lang="en"
+                  maxlength="254"
+                  value=""
+                  placeholder="example@domain.com"
+                  autocapitalize="off" spellcheck="false" autocorrect="off"
+                  autocomplete="on"
+                  required=""
+                  inputmode="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" > -->
+            
+            <br><br>
+                <!-- Submit button -->
+                <input id="submitBtn" class="btn" type="submit" value="Verify Email">
+              </form>
+              
+            </div>
+            
+                          <div class="container">
+                            <h2>Your Results</h2>
+                            <div id="resultCont">
+                             
+                              <!-- <img src="img/loading.svg" alt=""> -->
+                            </div>
+                          </div>
+</main>
+
+    <footer>CopyRight I-validate.com | All Rights Reserved</footer>
+
+  </body>
+  <script src="./js/index.js"></script>
+</html>
